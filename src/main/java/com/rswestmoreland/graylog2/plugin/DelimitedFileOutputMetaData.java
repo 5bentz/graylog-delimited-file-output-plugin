@@ -32,7 +32,7 @@ public class DelimitedFileOutputMetaData implements PluginMetaData {
 
 	@Override
 	public Version getRequiredVersion() {
-		return Version.from(2, 1, 1);
+		return Version.from(6, 0, 0);
 	}
 
 	@Override
@@ -48,6 +48,6 @@ public class DelimitedFileOutputMetaData implements PluginMetaData {
 	@SuppressWarnings("deprecation")
 	@Override
 	public Version getVersion() {
-		return new Version(0, 1, 0);
+		return new Version(6, 0, 4);
 	}
 }

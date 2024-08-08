@@ -1,11 +1,14 @@
-This branch allows the plugin to write to several independent files.
-
 Graylog Delimited File Output
 =============================
 
-This plugin allows you to save messages from a Graylog 2.X server in various formats.  Messages are in delimited formats, including comma (csv), tab (tsv), pipe and space.  The files can be rotated based on line count or timed intervals.
+This plugin allows you to save messages from a Graylog 6.X server in various formats.  Messages are in delimited formats, including comma (csv), tab (tsv), pipe and space.  The files can be rotated based on line count or timed intervals.
 
-This plugin supports Graylog 2.X+.
+This plugin supports Graylog 6.X+.
+
+## Changelog
+
+  * 2024-08: Support Graylog 6.0
+  * 2021-01: Support multiple outputs: the plugin can write to several independent files
 
 ## How to build
 

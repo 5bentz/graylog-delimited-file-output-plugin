@@ -10,7 +10,7 @@
 
     <groupId>com.wizecore.graylog2</groupId>
     <artifactId>graylog-delimited-file-output-plugin</artifactId>
-    <version>0.1.0</version>
+    <version>${graylog2.version}</version>
     <packaging>jar</packaging>
 
     <name>graylog-delimited-file-output-plugin</name>
@@ -23,9 +23,10 @@
         <maven.install.skip>true</maven.install.skip>
         <maven.deploy.skip>true</maven.deploy.skip>
         <maven.site.skip>true</maven.site.skip>
-        <graylog2.version>2.1.1</graylog2.version>
-        <graylog2.syslog4j.version>0.9.55</graylog2.syslog4j.version>
+        <graylog2.version>6.0.4</graylog2.version>
+        <graylog2.syslog4j.version>0.9.61</graylog2.syslog4j.version>
         <graylog2.plugin-dir>/usr/share/graylog-server/plugin</graylog2.plugin-dir>
+        <guice.version>7.0.0</guice.version>
     </properties>
 
     <dependencies>
@@ -52,6 +53,26 @@
             <artifactId>slf4j-jdk14</artifactId>
             <version>1.7.21</version>
 			<scope>provided</scope>
+        </dependency>
+        <!-- Refer: https://github.com/wizecore/graylog2-output-syslog/ -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>${guice.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-assistedinject</artifactId>
+            <version>${guice.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- FIXME: must match one used by graylog -->
+        <dependency>
+            <groupId>org.graylog2.repackaged</groupId>
+            <artifactId>uuid</artifactId>
+            <version>3.2.1</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <build>

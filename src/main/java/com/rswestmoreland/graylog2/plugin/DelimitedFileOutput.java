@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.graylog2.plugin.Message;
 import org.graylog2.plugin.configuration.Configuration;
